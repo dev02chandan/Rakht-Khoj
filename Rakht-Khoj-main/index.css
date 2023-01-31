@@ -46,6 +46,14 @@ header {
   position: relative;
   background-attachment: fixed;
 }
+#nav-box{
+  margin:20px;
+  padding:5px;
+  position: fixed;
+  top: 40px;;
+  width: 100%;
+}
+
 
 #logo {
   position: absolute;
