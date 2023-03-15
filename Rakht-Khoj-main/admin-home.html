@@ -17,38 +17,68 @@
   <body>
 
     <header>
-        <nav>
-        <ul class="nav nav-pills m-3 justify-content-end" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="admin-home.html#reserve" role="tab" aria-controls="pills-home" aria-selected="true">Blood Reserve</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="admin-home.html#donorlist" role="tab" aria-controls="pills-profile" aria-selected="false">Donor List</a>
+              <a class="nav-link" href="#">Link</a>
             </li>
+            
             <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#admin-home.html#requests" role="tab" aria-controls="pills-contact" aria-selected="false">Requests</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#admin-home.html#userqueries" role="tab" aria-controls="pills-contact" aria-selected="false">User Queries</a>
+              <a class="nav-link disabled" href="#">Disabled</a>
             </li>
           </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-          </div>
+          <form class="form-inline my-2 my-lg-0 justify-content-end">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+
+
+        <nav>
+        <div class = "">
+
+          <ul class="nav nav-pills m-3 justify-content-end bg-light" id="pills-tab" role="tablist">
+              <li class="nav-item bg-danger ">
+                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="admin-home.html#reserve" role="tab" aria-controls="pills-home" aria-selected="true">Blood Reserve</a>
+              </li>
+              <li class="nav-item bg-danger">
+                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="admin-home.html#donorlist" role="tab" aria-controls="pills-profile" aria-selected="false">Donor List</a>
+              </li>
+              <li class="nav-item bg-danger">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#admin-home.html#requests" role="tab" aria-controls="pills-contact" aria-selected="false">Requests</a>
+              </li>
+              <li class="nav-item bg-danger">
+                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#admin-home.html#userqueries" role="tab" aria-controls="pills-contact" aria-selected="false">User Queries</a>
+              </li>
+            </ul>
+            
+        </div>
         </nav>
 
     </header>
 
-    <div id="donorlist">
-        <table class="table">
+    <div id="donorlist" class="padded">
+        <table class="table table-hover table-striped">
             <thead class="thead-dark">
               <tr>
                 <th scope="col">SrNo.</th>
                 <th scope="col">Donor</th>
                 <th scope="col">Blood Group</th>
+                <th scope="col">Last Donated</th>
                 <th scope="col">Information</th>
+                <th scope="col">Contact</th>
               </tr>
             </thead>
             <tbody>
@@ -56,19 +86,44 @@
                 <th scope="row">1</th>
                 <td>Mark</td>
                 <td>Otto</td>
-                <td>@mdo</td>
+                <td>24-02-2102</td>
+                <td>
+                  Diseases: No<br>
+                  Age: 22<br>
+                  Gender: M<br>
+                </td>
+                <td>
+                  Contact: 123456789<br>
+                  E-mail: abc@gmail.com<br>
+                </td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
-                <td>@fat</td>
+                <td>24-02-2102</td>
+                <td>
+                  Diseases: No<br>
+                  Age: 22<br>
+                  Gender: M<br>
+                </td>
+                <td>
+                  Contact: 123456789<br>
+                  E-mail: abc@gmail.com<br>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>Larry</td>
                 <td>the Bird</td>
-                <td>@twitter</td>
+                <td>24-02-2102</td>
+                <td>
+                  Diseases: No<br>
+                  Age: 22<br>
+                  Gender: M<br>
+                </td>
+                <td>
+                  Contact: 123456789<br>
+                  E-mail: abc@gmail.com<br>
               </tr>
             </tbody>
           </table>
