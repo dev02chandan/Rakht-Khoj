@@ -8,6 +8,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 
+.form-row > * {
+    margin: 10px 20px;
+}
+.blocker{
+    display: block;
+}
+
 * {
     margin: 0px;
     padding: 0;
