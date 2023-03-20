@@ -5,8 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=NTR&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-
-.log-box{
+.log-box {
   grid-template-rows: 45% 10% 45%;
   display: grid;
   justify-self: center;
@@ -46,24 +45,25 @@ header {
   position: relative;
   background-attachment: fixed;
 }
-#nav-box{
-  margin:20px;
-  padding:5px;
+#nav-box {
+  margin: 20px;
+  padding: 5px;
   position: fixed;
-  top: 40px;;
+  top: 40px;
   width: 100%;
 }
 
-
 #logo {
   position: absolute;
-  top: 9%;
-  left: 5%;
+  width: 300px;
+  max-height: 100px;
+  top: 3%;
+  left: 7%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: "Neuton", serif;
-  line-height: 30px;
-  margin-bottom: 10px;
+  /* line-height: 30px; */
+  /* margin-bottom: 10px; */
 }
 
 #logo > a > img {
@@ -162,14 +162,14 @@ header {
   letter-spacing: 3px;
   height: 8vh;
   font-family: "Patrick Hand SC", cursive;
-  margin:20px auto;
+  margin: 20px auto;
 }
 
 .hero-btn:hover {
   border: 1px solid #cd5c5c;
   background: #cd5c5c;
   transition: 1s;
-  transform: scale(1.10);
+  transform: scale(1.1);
   font-weight: 300;
 }
 
@@ -656,7 +656,7 @@ main {
   /*ABOUT*/
 
   .about {
-    width:98%;
+    width: 98%;
     margin: auto;
     text-align: center;
     padding-top: 8%;
@@ -685,7 +685,6 @@ main {
     background: white;
     margin: 2%;
   }
-  
 
   .about-col:hover {
     transform: scale(1.03, 1.03);
@@ -1341,17 +1340,21 @@ footer {
   margin: 0px;
 }
 
-
 .customer-text-box:hover {
   transition: 1s;
-  transform: scale(1.10);
-  transition-property:unset;
+  transform: scale(1.1);
+  transition-property: unset;
   /* background: #332d2e; */
 }
 /* effect-shine */
 @import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
 .effect-shine:hover {
-  -webkit-mask-image:  linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
 }
@@ -1360,7 +1363,7 @@ footer {
   from {
     -webkit-mask-position: 150%;
   }
-  
+
   to {
     -webkit-mask-position: -50%;
   }
