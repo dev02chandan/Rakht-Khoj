@@ -7,6 +7,18 @@
 @import url("https://fonts.googleapis.com/css2?family=NTR&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
 .form-row > * {
   margin: 10px 20px;
 }
@@ -40,7 +52,7 @@ a:active {
 header {
   background-color: white;
   color: white;
-  height: 18%;
+  /* height: 18%; */
   width: 100%;
   z-index: 10;
   position: fixed;
@@ -99,18 +111,18 @@ main {
 }
 
 .box {
-  width: 500px;
-  padding-top: 15%;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom: 20px solid #dc143c;
+  /* width: 500px; */
+  padding: 10%;
+  padding-bottom: 5%;
+  text-align: center;
+  justify-content: center;
 }
 
 .box h2 {
   color: #fff;
   background: #dc143c;
   padding: 14px 19px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -121,33 +133,37 @@ main {
 .box .des li {
   list-style: none;
   padding: 10px;
-  width: 96%;
+  /* margin: 10px; */
+  /* width: 96%; */
   background: #fff;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s;
-  font-family: "Patrick Hand", cursive;
+  text-align: center;
+  text-decoration: none;
 }
 
 .box .des li:hover {
+  margin: 10px;
   transform: scale(1.1);
   z-index: 100;
   background: #db7093;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .box .des li span {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   text-align: center;
-  line-height: 20px;
+  line-height: 30px;
   background: #db7093;
   color: #fff;
   display: inline-block;
   border-radius: 50%;
   margin-right: 10px;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
   transform: translateY(-2px);
 }
@@ -183,6 +199,7 @@ main {
   text-align: center;
   font-family: "Neuton", serif;
   border: none;
+  justify-content: left;
 }
 
 .hero-btn:hover {

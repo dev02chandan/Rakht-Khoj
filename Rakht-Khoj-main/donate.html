@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='donate.css'>
+
     <link rel="icon" href='./Images/bb_logo(black).png' type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     
@@ -16,18 +17,37 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script>
+    <!--<script>
         $(function(){
             $('nav').load('header.html');
         });
-    </script>
+    </script>-->
 </head>
 <title>Connect with us & save lives around your location </title>
 
 <body style="background-color: #FAF9F6">
     <header>
+        
         <nav>
-        </nav>
+          <div id="logo" style="position: default;">
+            <a href="index.html">
+                <div class="header-logo"><img src="./Images/logo.png"></div>
+            </a>
+        </div>
+          <div id="nav">
+              <div class="header-list" id="headerl">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                  <ul>
+                      <li><a class="scroll" href="#about-us">About Us</a></li>
+                      <li><a class="scroll" href="#vol-sect">Volunteers</a></li>
+                      <li><a href="donate.html" target="_self">Donate</a></li>
+                      <li><a href="help.html" target="_self">Get Help</a></li>
+                  </ul>
+              </div>
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+          </div>
+      </nav>
+
     </header>
 
         <div class="box mx-auto" >
@@ -39,9 +59,6 @@
               <li><a class="scroll" href="#submit"><span>4</span> Submit</a></li>
             </ul>
 
-            <div class="text-box">
-                <a href="Register.html" class="hero-btn" target="_self">Proceed</a>
-            </div>
         </div>
     
 
@@ -50,7 +67,7 @@
     <div class = "ml-4 mr-4 mt-5 mb-5" style="background-color: #FAF9F6">
         <form>
           <div id="register" section>
-        <h2 >User Information</h2>
+        <h2 class="font-weight-bold"  >User Information</h2>
         <div class="form-row">
           <div class="col-md-3 mb-3">
             <label for="validationDefault01">First name</label>
@@ -349,7 +366,7 @@
 
 
         <div id="blood-details">
-        <h2 >Blood Donor Details</h2>
+        <h2 class="font-weight-bold">Blood Donor Details</h2>
         <div class="form-row">
             <div class="col-md-2 mb-3">
                 <label for="validationDefault05">Blood Group</label>
@@ -439,7 +456,7 @@
 
         <div id="apdetails">
 
-          <h2 >Appointment Details</h2>
+          <h2 class="font-weight-bold">Appointment Details</h2>
           <div class="form-row">
             <div class="col-md-11 mb-3">
               <label for="validationCustom03">Address</label>
@@ -473,7 +490,7 @@
       </div>
 
    
-        <h2 id="submit">Submit Form</h2>
+        <h2 id="submit" class="font-weight-bold">Submit Form</h2>
         <div class="form-group">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
@@ -510,5 +527,39 @@
     </footer>
     
 
+
+    <script>
+      const preloader = document.querySelector('.preloader');
+      const fadeEffect = setInterval(() => {
+          if (!preloader.style.opacity) {
+              preloader.style.opacity = 1;
+          }
+          if (preloader.style.opacity > 0) {
+              preloader.style.opacity -= 1.5;
+          } else {
+              clearInterval(fadeEffect);
+          }
+      }, 1500);
+      window.addEventListener('load', fadeEffect);
+  </script>
+  <!--js for scroll to top-->
+  <script src="up.js"></script>
+
+  <!--JAVASCRIPT FOR TOGGLE MENU -->
+  <script>
+      var headerl = document.getElementById("headerl");
+
+      function showMenu() {
+          headerl.style.right = "0";
+      }
+
+      function hideMenu() {
+          headerl.style.right = "-210px";
+      }
+  </script>
+
+
+  <!--js for scroll effects-->
+  <script src="scroll.js"></script>
 
 </body>

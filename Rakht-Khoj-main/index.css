@@ -48,7 +48,7 @@ header {
 #nav-box {
   margin: 20px;
   padding: 5px;
-  position: fixed;
+  /* position: fixed; */
   top: 40px;
   width: 100%;
 }
@@ -504,10 +504,7 @@ main {
 .title-head {
   font-family: "Alegreya Sans SC", sans-serif;
 
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
+
 
   header {
     height: 100vh;
@@ -517,7 +514,7 @@ main {
     background-position: center;
     background-size: cover;
     position: relative;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
 
   nav {
@@ -545,7 +542,7 @@ main {
   }
 
   .header-list ul li a {
-    color: white;
+    /* color: white; */
     font-size: 24px;
     text-decoration: none;
     font-family: "Fredoka One", cursive;
@@ -567,7 +564,7 @@ main {
 
   .text-box {
     width: 90%;
-    color: #fff;
+    /* color: #fff; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -575,6 +572,7 @@ main {
     text-align: center;
     font-family: "Neuton", serif;
     line-height: 50px;
+
   }
 
   .text-box h1 {
@@ -584,16 +582,16 @@ main {
   }
 
   .text-box p {
-    margin: 10px 0 40px;
+    margin: 10px 0px 40px;
     font-size: 26px;
-    color: #fff;
+    /* color: #fff; */
   }
 
   .hero-btn {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
+    /* color: #fff; */
+    /* border: 1px solid #fff; */
     padding: 12px 30px;
     font-size: 25px;
     background: transparent;
