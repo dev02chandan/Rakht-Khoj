@@ -23,6 +23,7 @@ const firebaseConfig = {
     var lname = getElementVal("lname");
     var emailid = getElementVal("emailid");
     var gender = getChoice("GenderChoice");
+    var bloodgroup = getElementVal("BloodGroup");
     var country = getElementVal("country");
     var phonenumber = getElementVal("phonenumber");
     var age = getElementVal("age");
@@ -31,11 +32,11 @@ const firebaseConfig = {
 
     // console.log(fname,lname,emailid,gender,country,phonenumber,age,address,city);
 
-    saveMessages(fname,lname,emailid,gender,country,phonenumber,age,address,city);
+    saveMessages(fname,lname,emailid,gender,bloodgroup,country,phonenumber,age,address,city);
 
   }
 
-  const saveMessages =(fname,lname,emailid,gender,country,phonenumber,age,address,city) =>{
+  const saveMessages = (fname,lname,emailid,gender,bloodgroup,country,phonenumber,age,address,city) =>{
     // var newDonateForm = donate_form_db.push();
 
     donate_form_db.ref("DonateForm/"+phonenumber).set({
@@ -43,6 +44,7 @@ const firebaseConfig = {
       lname : lname,
       emailid : emailid,
       gender:gender,
+      bloodgroup:bloodgroup,
       country : country,
       phonenumber : phonenumber,
       age : age,
