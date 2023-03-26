@@ -65,21 +65,21 @@
 
 
     <div class = "ml-4 mr-4 mt-5 mb-5" style="background-color: #FAF9F6">
-        <form>
+        <form id="donateform">
           <div id="register" section>
         <h2 class="font-weight-bold"  >User Information</h2>
         <div class="form-row">
           <div class="col-md-3 mb-3">
-            <label for="validationDefault01">First name</label>
-            <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+            <label for="validationDefault01">First name*</label>
+            <input type="text" class="form-control" id="fname" placeholder="First name" value="Sahil" required>
           </div>
           <div class="col-md-3 mb-3">
-            <label for="validationDefault02">Last name</label>
-            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+            <label for="validationDefault02">Last name*</label>
+            <input type="text" class="form-control" id="lname" placeholder="Last name" value="Patki" required>
           </div>
           <div class="col-md-4 mb-3">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="exampleInputEmail1">Email address*</label>
+            <input type="email" class="form-control" id="emailid" aria-describedby="emailHelp" placeholder="Enter email" value="sahilp12@gmail.com" required>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
           </div>
@@ -87,10 +87,10 @@
         <div class="form-row">
 
           <div class="control-group">
-            <label class="control-label">Country</label>
+            <label class="control-label">Country*</label>
             <div class="controls">
                 <select id="country" name="country" class="input-xlarge">
-                    <option value="" selected="selected">(please select a country)</option>
+                    <option value="IN" selected="selected">Default Selected Country: India</option>
                     <option value="AF">Afghanistan</option>
                     <option value="AL">Albania</option>
                     <option value="DZ">Algeria</option>
@@ -335,25 +335,25 @@
         </div>
 
           <div class="col-md-3 mb-3">
-            <label for="validationDefault03">Phone Number</label>
-            <input type="number" class="form-control" id="validationDefault03" placeholder="Number" max = "9999999999" required>
+            <label for="validationDefault03">Phone Number*</label>
+            <input type="number" class="form-control" id="phonenumber" placeholder="Number" minlength ="10" maxlength = "10" required>
           </div>
 
           <div class="form-group col-md-3 col-sm-3">
-            <label for="age">Age</label>
-            <input type="number" class="form-control " id="age" placeholder="" max ="150">
+            <label for="age">Age*</label>
+            <input type="number" class="form-control " id="age" placeholder="" max ="150" required>
         </div>
           
           <div class="col-md-3 mb-3">
-            <label for="validationDefault04">Gender</label>
+            <label for="validationDefault04">Gender*</label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <input class="form-check-input" type="radio" name="GenderChoice" id="gridRadios1" value="M" checked>
               <label class="form-check-label " for="gridRadios1">
                 <span class="ml-4">Male</span> 
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <input class="form-check-input" type="radio" name="GenderChoice" id="gridRadios2" value="F">
               <label class="form-check-label" for="gridRadios2">
                 <span class="ml-4">Female</span> 
               </label>
@@ -369,17 +369,17 @@
         <h2 class="font-weight-bold">Blood Donor Details</h2>
         <div class="form-row">
             <div class="col-md-2 mb-3">
-                <label for="validationDefault05">Blood Group</label>
-                <select class="blocker input-xlarge" aria-label="Default select example">
+                <label for="validationDefault05">Blood Group*</label>
+                <select class="blocker input-xlarge" aria-label="Default select example" required>
                     <option selected>Select Blood Group</option>
                     <option value="1">O+</option>
                     <option value="2">O-</option>
                     <option value="3">AB+</option>
-                    <option value="1">AB-</option>
-                    <option value="2">A+</option>
-                    <option value="3">A-</option>
-                    <option value="2">B+</option>
-                    <option value="3">B-</option>
+                    <option value="4">AB-</option>
+                    <option value="5">A+</option>
+                    <option value="6">A-</option>
+                    <option value="7">B+</option>
+                    <option value="8">B-</option>
                 </select>
             </div>
             <div class="col-md-2 mb-3">
@@ -459,32 +459,23 @@
           <h2 class="font-weight-bold">Appointment Details</h2>
           <div class="form-row">
             <div class="col-md-11 mb-3">
-              <label for="validationCustom03">Address</label>
-              <input type="text" class="form-control" id="validationCustom03" placeholder="Address" required>
+              <label for="validationCustom03">Address*</label>
+              <input type="text" class="form-control" id="address" placeholder="Address" required>
             </div>
           </div>
           
         <div class="form-row">
           <div class="col-md-3 mb-3">
-            <label for="validationCustom03">City</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-              Please provide a valid city.
-            </div>
+            <label for="validationCustom03">City*</label>
+            <input type="text" class="form-control" id="city" placeholder="City" required>
           </div>
           <div class="col-md-3 mb-3">
             <label for="validationCustom04">State</label>
-            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
-            <div class="invalid-feedback">
-              Please provide a valid state.
-            </div>
+            <input type="text" class="form-control" id="validationCustom04" placeholder="State">
           </div>
           <div class="col-md-3 mb-3">
             <label for="validationCustom05">Zip</label>
-            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
-            <div class="invalid-feedback">
-              Please provide a valid zip.
-            </div>
+            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" >
           </div>
         </div>
       </div>
@@ -495,12 +486,15 @@
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
             <label class="form-check-label" for="invalidCheck2">
-              <span class="ml-4"> Agree to terms and conditions</span>
+              <span class="ml-4"> Agree to terms and conditions*</span>
             </label>
           </div>
         </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <button class="btn btn-primary" type="submit" id="submit">Submit form</button>
       
+        <div id="footerinfo">
+          <span>All Fields marked in * are compulsory</span>
+        </div>
 
       </form>
     </div>
@@ -561,5 +555,7 @@
 
   <!--js for scroll effects-->
   <script src="scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src = './donate.js'></script>
 
 </body>

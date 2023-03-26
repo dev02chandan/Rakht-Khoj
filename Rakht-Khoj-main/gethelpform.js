@@ -23,7 +23,7 @@ const firebaseConfig = {
     var phone = getElementVal("phone");
     var message = getElementVal("msg");
 
-    saveMessages(name,email,phone,msg);
+    saveMessages(name,email,phone,message);
 
   }
 

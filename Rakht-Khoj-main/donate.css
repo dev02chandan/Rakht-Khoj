@@ -19,6 +19,16 @@ a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
 
+
+#footerinfo{
+  font-weight: bold;
+  font-size: large;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  color: red;
+}
+
 .form-row > * {
   margin: 10px 20px;
 }
