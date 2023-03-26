@@ -13,7 +13,7 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
   //reference your database
-  var get_help_formDB = firebase.database().ref("rakhtkhoj");
+  var donate_form_db = firebase.database();
 
   document.getElementById("donateform").addEventListener('submit',submitForm);
 
@@ -36,8 +36,9 @@ const firebaseConfig = {
   }
 
   const saveMessages =(fname,lname,emailid,gender,country,phonenumber,age,address,city) =>{
-    var newGetHelpForm = get_help_formDB.push();
-    newGetHelpForm.set({
+    // var newDonateForm = donate_form_db.push();
+
+    donate_form_db.ref("DonateForm/"+phonenumber).set({
       fname : fname,
       lname : lname,
       emailid : emailid,
@@ -48,6 +49,10 @@ const firebaseConfig = {
       address : address,
       city : city
     });
+    alert("Form Submitted")
+  }
+
+  const getData=()=>{
     
   }
 
