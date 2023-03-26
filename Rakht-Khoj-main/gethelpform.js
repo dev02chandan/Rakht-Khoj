@@ -27,13 +27,13 @@ const firebaseConfig = {
 
   }
 
-  const saveMessages =(name,email,phone,msg) =>{
+  const saveMessages =(name,email,phone,message) =>{
     var newGetHelpForm = get_help_formDB.push();
     newGetHelpForm.set({
       name : name,
       email : email,
       phone : phone,
-      msg : msg,
+      message : message,
     });
     
   }
