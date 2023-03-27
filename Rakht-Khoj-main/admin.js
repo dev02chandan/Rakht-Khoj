@@ -1,47 +1,29 @@
-// Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyBGqHHBO7sl4nNeodqHu-NhtIEW-tvk5h8",
-    authDomain: "rakhtkhoj.firebaseapp.com",
-    databaseURL: "https://rakhtkhoj-default-rtdb.firebaseio.com",
-    projectId: "rakhtkhoj",
-    storageBucket: "rakhtkhoj.appspot.com",
-    messagingSenderId: "171689745069",
-    appId: "1:171689745069:web:54cc2c7598ac7531e18424",
-    measurementId: "G-F8B27WHKWH"
-  };
-    // initialize firebase
-    firebase.initializeApp(firebaseConfig);
+import database from './firebasedonatedb.js';
+import {ref ,onValue} from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+  // read data
+getData.addEventListener('click',() => {
+  // function fetchData(){
   
-    //reference your database
-    var database = firebase.database();
- 
-    const getDonorData=()=>{
-    //   var name = getElementVal()
-      var user_ref = database.ref("DonateForm/"+"")
-      user_ref.on('value', gotData, errData);
-
-      function gotData(data){
-        console.log(data.val());
-      }
-
-      function errData(err){
-        console.log('No Data');
-        console.log(err);
-      }
-    }
+    console.log("fetch reach");
   
-    const getChoice = (choicename) =>{
-      var data = document.getElementsByName(choicename);
-      var i;
-      for (i=0;i<=data.length; i++){
-        if (data[i].checked){
-          return data[i].value;
-        }
-      }
-    }
+    $('#dataTbl td').remove();
+    var rowNum = 0; 
+    const dbRef = ref(database, 'DonateForm/');
   
-    const getElementVal = (id) =>{
-      return document.getElementById(id).value;
-    };
-
-    getDonorData();
+    onValue(dbRef, (snapshot) => {
+      snapshot.forEach((childSnapshot) => {
+      const childKey = childSnapshot.key;
+      const childData = childSnapshot.val();
+      rowNum += 1; 
+      var row = "<tr><td>" + rowNum + "</td><td>" + childData.fname + "</td><td>" + childData.lname + "</td><td>" + childData.bloodgroup +  "</td><td>" +childData.emailid+"</td><td>" +childData.gender+  "</td></tr>"
+  
+      $(row).appendTo('#dataTbl');
+      
+      });
+    }, {
+        onlyOnce: true
+  });
+  
+  // }
+  });
+    
