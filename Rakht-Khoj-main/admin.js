@@ -1,6 +1,8 @@
-import database from './firebasedonatedb.js';
 import {ref ,onValue} from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+import database from "./firebasecred.js";
   // read data
+
+console.log("js reach");
 getData.addEventListener('click',() => {
   // function fetchData(){
   
