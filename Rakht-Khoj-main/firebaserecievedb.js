@@ -11,6 +11,7 @@ submit.addEventListener('click',(e) => {
     var emailid = getElementVal("emailid");
     var gender = getChoice("GenderChoice");
     var bloodgroup = getElementVal("BloodGroup");
+    var cause = getElementVal("cause");
     var country = getElementVal("country");
     var phonenumber = getElementVal("phonenumber");
     var age = getElementVal("age");
@@ -19,22 +20,23 @@ submit.addEventListener('click',(e) => {
   
     // console.log(fname,lname,emailid,gender,country,phonenumber,ag  e,address,city);
   
-    saveMessages(fname,lname,emailid,gender,bloodgroup,country,phonenumber,age,address,city);
+    saveMessages(fname,lname,emailid,gender,bloodgroup,cause,country,phonenumber,age,address,city);
   
   // }
 });
   
-  const saveMessages = (fname,lname,emailid,gender,bloodgroup,country,phonenumber,age,address,city) =>{
+  const saveMessages = (fname,lname,emailid,gender,bloodgroup,cause,country,phonenumber,age,address,city) =>{
     // var newDonateForm = donate_form_db.push();
   
     const userId = push(child(ref(database), 'users')).key;
    
-    set(ref(database, 'DonateForm/' + phonenumber),{
+    set(ref(database, 'RecieveForm/' + phonenumber),{
       fname : fname,
       lname : lname,
       emailid : emailid,
       gender:gender,
       bloodgroup:bloodgroup,
+      cause:cause,
       country : country,
       phonenumber : phonenumber,
       age : age,
