@@ -3,6 +3,7 @@ import { getDatabase, set, ref ,push, child, onValue} from "https://www.gstatic.
 import database from "./firebasecred.js";
 
 
+
 submit.addEventListener('click',(e) => {
     console.log("submit reach");
     e.preventDefault();
@@ -21,6 +22,9 @@ submit.addEventListener('click',(e) => {
     // console.log(fname,lname,emailid,gender,country,phonenumber,ag  e,address,city);
   
     saveMessages(fname,lname,emailid,gender,bloodgroup,cause,country,phonenumber,age,address,city);
+
+    matchingreq(bloodgroup,city);
+    
   
   // }
 });
@@ -67,5 +71,48 @@ const getChoice = (choicename) =>{
   const getElementVal = (id) =>{
     return document.getElementById(id).value;
   };
+var el;
+const matchingreq = (bloodgroup,city)=>{
+  const dbRef = ref(database, 'RecieveForm/');
+    var flag=false;
+    onValue(dbRef, (snapshot) => {
+      snapshot.forEach((childSnapshot) => {
+      const childKey = childSnapshot.key;
+      const childData = childSnapshot.val();
+       
+      // var row = "<tr><td>" + rowNum + "</td><td>" + childData.fname + "</td><td>" + childData.lname + "</td><td>" + childData.bloodgroup +  "</td><td>" +childData.emailid+"</td><td>" +childData.gender+  "</td></tr>"
+      console.log(typeof childData.bloodgroup);
+      console.log(childData.bloodgroup);
+      if ((childData.bloodgroup == bloodgroup) && (childData.city==city)){
+        console.log((childData.bloodgroup == bloodgroup));
+        console.log((childData.city == city));
+        el = document.getElementById("response");
+        if (el) {
+          el.innerHTML = "Found Your Match";
+        } else {
+          console.log('element not found');
+        }
+        // document.getElementById(response).innerHTML = "Found Your Match";
+        flag = true;
+        if(flag){return;}
+        
+      }
+      });
+    }, {
+        onlyOnce: true
+  });
+
+  el = document.getElementById("response");
+  if (el) {
+    if(flag==false){
+      el.innerHTML = "No Match Available. Your Request is noted.";
+    }
+  } else {
+    console.log('element not found');
+  }
+  // if(flag==false){
+  //   // document.getElementById(response).innerHTML = "No Match Available. Your Request is noted.";
+  // }
+}
 
 
