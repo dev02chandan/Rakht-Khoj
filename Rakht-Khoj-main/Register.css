@@ -134,13 +134,13 @@ input{
     margin: 5px;
 }
 
-.action-btn{
+/* .action-btn{
     width: 100%;
     display: flex;
     margin: 30px 0;
-}
+} */
 
-.btn{
+/* .btn{
     font-family:'Alegreya Sans SC', sans-serif;
     border: 1px solid #fff;
     padding: 10px;
@@ -150,11 +150,11 @@ input{
     cursor: pointer;
     font-weight:700px;
     font-size: medium;
-    margin: 0 10px;
+    margin: 20px 10px;
     background: none;
     border: 2px solid white;
     color: white;
-}
+} */
 
 .primary{
     font-size: medium;
@@ -171,11 +171,11 @@ input{
 
   
 }
-.btn:hover{
+/* .btn:hover{
     background: linear-gradient(45deg, yellow 24%, orange 100%);
     border: none;
     color: black;  
-}
+} */
 
 @media(max-width:700px){
     .photo{
@@ -186,21 +186,21 @@ input{
         border-radius: 10px;
         font-size: 20px
     }
-    .action-btn{
+    /* .action-btn{
         margin: 5px;
         display: block;
         width: 100%;
-    }
+    } */
 
-    .btn{
+    /* .btn{
         width:100%;
         margin:5px;
         padding:5px;
        
-    }
+    } */
 }
 
-@media screen and (max-width:990px) and (min-width:665px){
+/* @media screen and (max-width:990px) and (min-width:665px){
     .action-btn{
         margin: 5px;
         display: block;
@@ -212,4 +212,6 @@ input{
         margin:5px;
         padding:5px;
     }
-}
+} */
+
+
