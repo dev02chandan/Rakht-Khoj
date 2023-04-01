@@ -41,6 +41,12 @@ submit.addEventListener('click',(e) => {
       address : address,
       city : city
     }).then(()=>{
+      var el = document.getElementById("response");
+        if (el) {
+          el.innerHTML = "Our Team will reach out to your address: "+ address + ", "+city;
+        } else {
+          console.log('element not found');
+        }
       alert("Form Submitted");
     })
     .catch((error)=>{

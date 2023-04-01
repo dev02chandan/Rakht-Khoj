@@ -23,7 +23,7 @@ submit.addEventListener('click',(e) => {
   
     saveMessages(fname,lname,emailid,gender,bloodgroup,cause,country,phonenumber,age,address,city);
 
-    matchingreq(bloodgroup,city);
+    matchingreq(bloodgroup,city,address);
     
   
   // }
@@ -53,7 +53,6 @@ submit.addEventListener('click',(e) => {
       console.log(error);
       alert("Error in submission. Please send a request through CONTACT US section");
     });
-    
   }
   
 
@@ -72,7 +71,7 @@ const getChoice = (choicename) =>{
     return document.getElementById(id).value;
   };
 var el;
-const matchingreq = (bloodgroup,city)=>{
+const matchingreq = (bloodgroup,city,address)=>{
   const dbRef = ref(database, 'DonateForm/');
     var flag=false;
     onValue(dbRef, (snapshot) => {
@@ -92,7 +91,7 @@ const matchingreq = (bloodgroup,city)=>{
         el = document.getElementById("response");
         flag = true;
         if (el) {
-          el.innerHTML = "Found Your Match";
+          el.innerHTML = "Found Your Match." + " Our Team will reach out to your address: "+ address + ", "+city;
         } else {
           console.log('element not found');
         }
