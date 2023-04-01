@@ -73,7 +73,7 @@ const getChoice = (choicename) =>{
   };
 var el;
 const matchingreq = (bloodgroup,city)=>{
-  const dbRef = ref(database, 'RecieveForm/');
+  const dbRef = ref(database, 'DonateForm/');
     var flag=false;
     onValue(dbRef, (snapshot) => {
       snapshot.forEach((childSnapshot) => {
@@ -83,17 +83,20 @@ const matchingreq = (bloodgroup,city)=>{
       // var row = "<tr><td>" + rowNum + "</td><td>" + childData.fname + "</td><td>" + childData.lname + "</td><td>" + childData.bloodgroup +  "</td><td>" +childData.emailid+"</td><td>" +childData.gender+  "</td></tr>"
       console.log(typeof childData.bloodgroup);
       console.log(childData.bloodgroup);
+      console.log(bloodgroup)
+      console.log(childData.city);
+      console.log(city)
+      console.log((childData.bloodgroup == bloodgroup));
+      console.log((childData.city == city));
       if ((childData.bloodgroup == bloodgroup) && (childData.city==city)){
-        console.log((childData.bloodgroup == bloodgroup));
-        console.log((childData.city == city));
         el = document.getElementById("response");
+        flag = true;
         if (el) {
           el.innerHTML = "Found Your Match";
         } else {
           console.log('element not found');
         }
         // document.getElementById(response).innerHTML = "Found Your Match";
-        flag = true;
         if(flag){return;}
         
       }
