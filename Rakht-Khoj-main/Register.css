@@ -227,3 +227,31 @@ input {
 #logo > a > img {
   width: 70%;
 }
+
+.login_submit {
+  background-image: linear-gradient(to bottom right, #ffa500, #ffd700);
+  background-color: #ffa500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login_submit:hover {
+  background-image: linear-gradient(to bottom right, #ffa500, #ffd700);
+  background-color: #ffd700;
+}
+
+.click_here {
+  color: #ffffff; /* Sets the default color to blue */
+  text-decoration: none; /* Removes the underline */
+  font-weight: bold; /* Makes the text bold */
+  transition: color 0.3s; /* Adds a smooth color transition effect */
+}
+
+.click_here:hover {
+  color: #a4d0ff; /* Changes the color to a darker shade of blue on hover */
+  text-decoration: none;
+}
