@@ -7,20 +7,23 @@
 @import url("https://fonts.googleapis.com/css2?family=NTR&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
+a:link {
+  text-decoration: none;
+}
 
-a:link { text-decoration: none; }
+a:visited {
+  text-decoration: none;
+}
 
+a:hover {
+  text-decoration: none;
+}
 
-a:visited { text-decoration: none; }
+a:active {
+  text-decoration: none;
+}
 
-
-a:hover { text-decoration: none; }
-
-
-a:active { text-decoration: none; }
-
-
-#footerinfo{
+#footerinfo {
   font-weight: bold;
   font-size: large;
   padding: 10px;
@@ -147,16 +150,18 @@ main {
   /* width: 96%; */
   background: #fff;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s;
+  transition: transform 1s;
   text-align: center;
   text-decoration: none;
 }
 
 .box .des li:hover {
-  margin: 10px;
-  transform: scale(1.1);
+  /* margin: 10px; */
+  /* transform: scale(1.1); */
   z-index: 100;
-  background: #db7093;
+  background-color: #db7093;
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.5s;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   color: #fff;
   cursor: pointer;
@@ -175,7 +180,7 @@ main {
   margin-right: 10px;
   font-size: 20px;
   font-weight: 600;
-  transform: translateY(-2px);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .box .des li:hover span {
@@ -521,3 +526,13 @@ footer {
     padding-right: 2px;
   }
 }
+
+/* Adding CSS */
+/* 
+.zoomin {
+  transition: transform 0.2s ease-in-out;
+}
+
+.zoomin:hover {
+  transform: scale(1.2);
+} */

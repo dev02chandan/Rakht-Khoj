@@ -38,6 +38,7 @@ li a {
   margin-bottom: 10px;
   padding: 20px;
   transition: all ease 0.5s;
+  font-weight: 400;
 }
 
 li {
@@ -52,6 +53,8 @@ li {
 header ul li a:hover {
   background-color: rgba(220, 20, 60);
   color: white;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 * {
@@ -206,4 +209,21 @@ input {
     margin: 5px;
     padding: 5px;
   }
+}
+
+#logo {
+  position: absolute;
+  width: 300px;
+  max-height: 100px;
+  top: 20%;
+  left: 7%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Neuton", serif;
+  /* line-height: 30px; */
+  /* margin-bottom: 10px; */
+}
+
+#logo > a > img {
+  width: 70%;
 }

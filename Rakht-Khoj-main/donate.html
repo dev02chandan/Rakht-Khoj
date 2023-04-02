@@ -41,7 +41,8 @@
           <ul>
             <li><a class="scroll" href="#about-us">About Us</a></li>
             <li><a class="scroll" href="#vol-sect">Volunteers</a></li>
-            <li><a href="donate.html" target="_self">Donate</a></li>
+            <!-- <li><a href="donate.html" target="_self">Donate</a></li> -->
+            <li><a href="recieve.html" target="_self">Receive</a></li>
             <li><a href="help.html" target="_self">Get Help</a></li>
           </ul>
         </div>
@@ -51,20 +52,21 @@
 
   </header>
 
+  <!-- Four Easy steps -->
   <div class="box mx-auto">
     <h2>Four Easy Steps towards humanity</h2>
     <ul class="des">
-      <li><a class="scroll" href="#register"><span>1</span> User Information 🧍🏻</a></li>
-      <li><a class="scroll" href="#blood-details"><span>2</span> Blood Donor Details🩸</a></li>
-      <li><a class="scroll" href="#apdetails"><span>3</span> Appointment Details 📱</a></li>
-      <li><a class="scroll" href="#submit"><span>4</span> Submit</a></li>
+      <li><a class="zoomin" href="#register"><span>1</span> User Information 🧍🏻</a></li>
+      <li><a class="zoomin" href="#blood-details"><span>2</span> Blood Donor Details🩸</a></li>
+      <li><a class="zoomin" href="#apdetails"><span>3</span> Appointment Details 📱</a></li>
+      <li><a class="zoomin" href="#submit"><span>4</span> Submit</a></li>
     </ul>
 
   </div>
 
 
 
-
+  <!-- Form -->
   <div class="ml-4 mr-4 mt-5 mb-5" style="background-color: #FAF9F6">
     <form id="donateform">
       <div id="register" section>
@@ -470,18 +472,18 @@
         <div class="form-row">
           <div class="col-md-1  mb-3">
             <label for="validationDefault05">City*</label>
-            <select class="blocker input-xlarge" id = "city" aria-label="Default select example" required>
-                <option selected>Select your city</option>
-                <option value="Mumbai">Mumbai</option>
-                <option value="Pune">Pune</option>
-                <option value="Banglore">Banglore</option>
-                <option value="Kolkata">Kolkata</option>
-                <option value="Odisha">Odisha</option>
-                <option value="Walsad">Walsad</option>
-                <option value="Chennai">Chennai</option>
-                <option value="Delhi">Delhi</option>
+            <select class="blocker input-xlarge" id="city" aria-label="Default select example" required>
+              <option selected>Select your city</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Pune">Pune</option>
+              <option value="Banglore">Banglore</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Walsad">Walsad</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Delhi">Delhi</option>
             </select>
-        </div>
+          </div>
           <div class="col-md-3 mb-3">
             <label for="validationCustom04">State</label>
             <input type="text" class="form-control" id="validationCustom04" placeholder="State">
@@ -511,7 +513,9 @@
 
     </form>
     <h2 class="font-weight-bold">Server response</h2>
-    <div><p id="response">Submit the Form to Recieve a reply</p> </div>
+    <div>
+      <p id="response">Submit the Form to Recieve a reply</p>
+    </div>
 
 
   </div>
