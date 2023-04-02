@@ -60,9 +60,29 @@
                 <i class="fas fa-envelope-square"></i>
 
                 <input type="password" placeholder="Password" id="password_login" style="margin-top:15px;">
-                <div>
+                <button type="button" class="password-toggle"
+                    onclick="document.getElementById('password_login').type = 'password'">
+                    Hide</button>
+
+                <button type="button" class="password-toggle"
+                    onclick="document.getElementById('password_login').type = 'text'">
+                    Show</button>
+                <!-- <button onclick="togglePassword()" class="password-toggle">Show/Hide</button>
+
+                <script>
+                    function togglePassword() {
+                        var passwordField = document.getElementById("password_login");
+                        if (passwordField.type === "password") {
+                            passwordField.type = "text";
+                        } else {
+                            passwordField.type = "password";
+                        }
+                    }
+
+                </script> -->
+                <!-- <div>
                     <p id="response" style="color:white; margin-left:10px;">Enter Password</p>
-                </div>
+                </div> -->
                 <div
                     style="font-family: sans-serif; font-size: 20px; margin-left: 10px; ; margin-top: 15px; color:white">
                     New User? <a href="Register.html" class="click_here">Click here</a>
