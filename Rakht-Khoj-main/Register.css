@@ -236,11 +236,11 @@ input {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, background-image 0.5s;
 }
 
 .login_submit:hover {
-  background-image: linear-gradient(to bottom right, #ffa500, #ffd700);
+  background-image: linear-gradient(to bottom right, #ffd700, #ffa500);
   background-color: #ffd700;
 }
 

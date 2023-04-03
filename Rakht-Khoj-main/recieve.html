@@ -504,7 +504,9 @@
           </label>
         </div>
       </div>
-      <button class="btn btn-primary" type="submit" id="submit">Submit form</button>
+      <button class="login_submit" type="submit" id="submit">Submit form</button>
+
+      <button type="reset" class="login_submit" onclick="myFunction()" id="reset">Reset Form</button>
 
       <div id="footerinfo" class="mt-1 mb-3">
         <span>All Fields marked in * are compulsory</span>
@@ -515,6 +517,12 @@
     <div>
       <p id="response">Submit the Form to Recieve a reply</p>
     </div>
+
+    <script>
+      function myFunction() {
+        document.getElementById("donateform").reset();
+      }
+    </script>
 
   </div>
 
