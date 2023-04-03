@@ -50,7 +50,13 @@
                         <input type="text" class="field" placeholder="Phone" id="phone">
                         <textarea input type="text" class="field" placeholder="Message" id="msg"></textarea>
                         <button type="submit" class="btn" id="submit">Submit</button>
+                        <button type="reset" class="btn2 " onclick="myFunction()">Reset Form</button>
                     </form>
+                    <script>
+                        function myFunction() {
+                            document.getElementById("gethelpform").reset();
+                        }
+                    </script>
                 </div>
             </div>
         </div>

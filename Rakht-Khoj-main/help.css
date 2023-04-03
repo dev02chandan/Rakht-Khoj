@@ -153,6 +153,17 @@ textarea {
   cursor: pointer;
   transition: 0.3s;
 }
+.btn2 {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: maroon;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
 .btn:hover {
   background-color: rgba(72, 61, 139);
