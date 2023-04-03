@@ -53,16 +53,17 @@
         <h2 >User Information</h2>
         <div class="form-row">
           <div class="col-md-3 mb-3">
-            <label for="validationDefault01">First name</label>
-            <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+            <label for="validationDefault01">First name*</label>
+            <input type="text" class="form-control" id="fname" placeholder="First name" required>
           </div>
           <div class="col-md-3 mb-3">
-            <label for="validationDefault02">Last name</label>
-            <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+            <label for="validationDefault02">Last name*</label>
+            <input type="text" class="form-control" id="lname" placeholder="Last name" required>
           </div>
           <div class="col-md-4 mb-3">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="exampleInputEmail1">Email address*</label>
+            <input type="email" class="form-control" id="emailid" aria-describedby="emailHelp" placeholder="Enter email"
+              required>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
           </div>
@@ -482,8 +483,24 @@
             </label>
           </div>
         </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      
+      </div>
+
+      <button class="btn btn-primary" type="submit" id="submit">Submit form</button>
+
+      <button type="reset" class="btn btn-primary" onclick="myFunction()" id="reset">Reset Form</button>
+
+
+
+      <div id="footerinfo" class="mb-5 mt-1">
+        <span>All Fields marked in * are compulsory</span>
+      </div>
+
+    </form>
+    <script>
+      function myFunction() {
+        document.getElementById("donateform").reset();
+      }
+    </script>
 
       </form>
     </div>

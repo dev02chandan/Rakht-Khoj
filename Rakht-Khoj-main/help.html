@@ -24,8 +24,8 @@
                 <div class="header-list" id="headerl">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a class="scroll" href="#about-us">About Us</a></li>
-                        <li><a class="scroll" href="#vol-sect">Volunteers</a></li>
+                        <li><a class="scroll" href="index.html#about-us">About Us</a></li>
+                        <li><a class="scroll" href="index.html#vol-sect">Volunteers</a></li>
                         <!-- <li><a href="donate.html" target="_self">Donate</a></li> -->
                         <li><a href="recieve.html" target="_self">Receive</a></li>
                         <li><a href="donate.html" target="_self">Donate</a></li>
@@ -50,7 +50,13 @@
                         <input type="text" class="field" placeholder="Phone" id="phone">
                         <textarea input type="text" class="field" placeholder="Message" id="msg"></textarea>
                         <button type="submit" class="btn" id="submit">Submit</button>
+                        <button type="reset" class="btn2 " onclick="myFunction()">Reset Form</button>
                     </form>
+                    <script>
+                        function myFunction() {
+                            document.getElementById("gethelpform").reset();
+                        }
+                    </script>
                 </div>
             </div>
         </div>
