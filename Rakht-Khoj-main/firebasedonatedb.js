@@ -3,7 +3,7 @@ import { getDatabase, set, ref ,push, child, onValue} from "https://www.gstatic.
 import database from "./firebasecred.js";
 
 
-submit.addEventListener('click',(e) => {
+login_submit.addEventListener('click',(e) => {
     console.log("submit reach");
     e.preventDefault();
     var fname = getElementVal("fname");

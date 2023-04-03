@@ -4,7 +4,7 @@ import database from "./firebasecred.js";
 
 
 
-submit.addEventListener('click',(e) => {
+login_submit.addEventListener('click',(e) => {
     console.log("submit reach");
     e.preventDefault();
     var fname = getElementVal("fname");
