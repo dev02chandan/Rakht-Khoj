@@ -44,12 +44,10 @@ passwordInput.addEventListener("keyup", () => {
   }
 });
 
-var username;
-
-submit.addEventListener("click", (e) => {
+login_submit.addEventListener("click", (e) => {
   console.log("submit reach");
   e.preventDefault();
-  username = getElementVal("username_reg");
+  var username = getElementVal("username_reg");
   var number = getElementVal("number_reg");
   var email = getElementVal("email_reg");
   var password = getElementVal("password_reg");
