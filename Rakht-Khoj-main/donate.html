@@ -39,8 +39,8 @@
         <div class="header-list" id="headerl">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
-            <li><a class="scroll" href="index.html#about-us">About Us</a></li>
-            <li><a class="scroll" href="index.html#vol-sect">Volunteers</a></li>
+            <li><a class="scroll" href="#about-us">About Us</a></li>
+            <li><a class="scroll" href="#vol-sect">Volunteers</a></li>
             <!-- <li><a href="donate.html" target="_self">Donate</a></li> -->
             <li><a href="recieve.html" target="_self">Receive</a></li>
             <li><a href="help.html" target="_self">Get Help</a></li>
@@ -74,16 +74,16 @@
         <div class="form-row">
           <div class="col-md-3 mb-3">
             <label for="validationDefault01">First name*</label>
-            <input type="text" class="form-control" id="fname" placeholder="First name" value="Sahil" required>
+            <input type="text" class="form-control" id="fname" placeholder="First name" required>
           </div>
           <div class="col-md-3 mb-3">
             <label for="validationDefault02">Last name*</label>
-            <input type="text" class="form-control" id="lname" placeholder="Last name" value="Patki" required>
+            <input type="text" class="form-control" id="lname" placeholder="Last name" required>
           </div>
           <div class="col-md-4 mb-3">
             <label for="exampleInputEmail1">Email address*</label>
             <input type="email" class="form-control" id="emailid" aria-describedby="emailHelp" placeholder="Enter email"
-              value="sahilp12@gmail.com" required>
+              required>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
         </div>
@@ -505,13 +505,23 @@
           </label>
         </div>
       </div>
+
       <button class="btn btn-primary" type="submit" id="submit">Submit form</button>
+
+      <button type="reset" class="btn btn-primary" onclick="myFunction()" id="reset">Reset Form</button>
+
+
 
       <div id="footerinfo" class="mb-5 mt-1">
         <span>All Fields marked in * are compulsory</span>
       </div>
 
     </form>
+    <script>
+      function myFunction() {
+        document.getElementById("donateform").reset();
+      }
+    </script>
 
 
   </div>

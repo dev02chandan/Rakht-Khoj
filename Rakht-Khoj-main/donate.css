@@ -696,17 +696,29 @@ footer {
   width: 100%;
 }
 
-#submit {
+.submit {
   background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.reset {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 50px;
   cursor: pointer;
 }
 
-#submit:hover {
+.submit:hover {
+  background-color: #0069d9;
+}
+.reset:hover {
   background-color: #0069d9;
 }
 
