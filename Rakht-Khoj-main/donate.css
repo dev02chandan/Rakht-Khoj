@@ -7,31 +7,6 @@
 @import url("https://fonts.googleapis.com/css2?family=NTR&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}
-
-#footerinfo {
-  font-weight: bold;
-  font-size: large;
-  padding: 10px;
-  margin: 20px;
-  text-align: center;
-  color: red;
-}
-
 .form-row > * {
   margin: 10px 20px;
 }
@@ -65,7 +40,7 @@ a:active {
 header {
   background-color: white;
   color: white;
-  /* height: 18%; */
+  height: 18%;
   width: 100%;
   z-index: 10;
   position: fixed;
@@ -124,18 +99,18 @@ main {
 }
 
 .box {
-  /* width: 500px; */
-  padding: 10%;
-  padding-bottom: 5%;
-  text-align: center;
-  justify-content: center;
+  width: 500px;
+  padding-top: 15%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 20px solid #dc143c;
 }
 
 .box h2 {
   color: #fff;
   background: #dc143c;
   padding: 14px 19px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -146,41 +121,35 @@ main {
 .box .des li {
   list-style: none;
   padding: 10px;
-  /* margin: 10px; */
-  /* width: 96%; */
+  width: 96%;
   background: #fff;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 1s;
-  text-align: center;
-  text-decoration: none;
+  transition: transform 0.5s;
+  font-family: "Patrick Hand", cursive;
 }
 
 .box .des li:hover {
-  /* margin: 10px; */
-  /* transform: scale(1.1); */
+  transform: scale(1.1);
   z-index: 100;
-  background-color: #db7093;
-  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
-    background-color 0.5s;
+  background: #db7093;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   color: #fff;
   cursor: pointer;
-  text-decoration: none;
 }
 
 .box .des li span {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   text-align: center;
-  line-height: 30px;
+  line-height: 20px;
   background: #db7093;
   color: #fff;
   display: inline-block;
   border-radius: 50%;
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 600;
-  transition: background-color 0.5s, color 0.5s;
+  transform: translateY(-2px);
 }
 
 .box .des li:hover span {
@@ -214,7 +183,6 @@ main {
   text-align: center;
   font-family: "Neuton", serif;
   border: none;
-  justify-content: left;
 }
 
 .hero-btn:hover {
@@ -525,197 +493,4 @@ footer {
     padding-left: 2px;
     padding-right: 2px;
   }
-}
-
-/* Adding CSS */
-/* 
-.zoomin {
-  transition: transform 0.2s ease-in-out;
-}
-
-.zoomin:hover {
-  transform: scale(1.2);
-} */
-
-/* Form Styles */
-
-#register {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-#register h2 {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.form-row {
-  margin-bottom: 20px;
-}
-
-.form-row label {
-  font-weight: bold;
-}
-
-.form-control:focus {
-  border-color: #ffa500;
-  box-shadow: none;
-}
-
-.form-row select {
-  height: 35px;
-  border-radius: 5px;
-  border-color: #ced4da;
-  padding: 5px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
-
-.form-row select:focus {
-  border-color: #ffa500;
-  box-shadow: none;
-}
-
-.form-row input[type="number"] {
-  height: 35px;
-  border-radius: 5px;
-  border-color: #ced4da;
-  padding: 5px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
-
-.form-row input[type="number"]:focus {
-  border-color: #ffa500;
-  box-shadow: none;
-}
-
-.form-check-input[type="radio"] {
-  margin-top: 5px;
-}
-
-.form-check-label {
-  margin-left: 10px;
-}
-
-.form-check-label span {
-  font-weight: bold;
-}
-
-.btn-primary {
-  background-image: linear-gradient(to bottom right, #f5a623, #ffdd4d);
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 10px 20px;
-  transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-position: right center;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn-primary:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-#blood-details {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-#blood-details h2 {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.blocker {
-  display: block;
-  width: 100%;
-  height: calc(2.5rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.form-check-label2 {
-  margin-left: 1.5rem !important;
-}
-
-.form-check-input[type="radio"] {
-  margin-top: 0.3rem;
-  margin-right: 0.3rem;
-}
-
-.form-check-input[type="checkbox"] {
-  margin-top: 0.2rem;
-  margin-right: 0.3rem;
-}
-
-#apdetails {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-#apdetails h2 {
-  /* font-size: 24px; */
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-#apdetails label {
-  font-weight: bold;
-}
-
-#apdetails input[type="text"],
-#apdetails select {
-  border: 1px solid #ced4da;
-  border-radius: 4px;
-  padding: 10px;
-  width: 100%;
-}
-
-#submit {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-#submit:hover {
-  background-color: #0069d9;
-}
-
-#footerinfo {
-  margin-top: 20px;
-  font-size: 14px;
-  color: #6c757d;
-}
-
-#footerinfo span {
-  font-style: italic;
 }
