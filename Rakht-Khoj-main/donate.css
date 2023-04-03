@@ -99,8 +99,8 @@ main {
 }
 
 .box {
-  width: 500px;
-  padding-top: 15%;
+  width: 1000px;
+  padding-top: 10%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom: 20px solid #dc143c;
@@ -121,7 +121,8 @@ main {
 .box .des li {
   list-style: none;
   padding: 10px;
-  width: 96%;
+  text-align: center;
+  width: 100%;
   background: #fff;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s;
@@ -518,6 +519,7 @@ footer {
 #register h2 {
   margin-bottom: 30px;
   text-align: center;
+  font-weight: bold;
 }
 
 .form-row {
@@ -605,6 +607,7 @@ footer {
 
 #blood-details h2 {
   margin-bottom: 30px;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -641,6 +644,7 @@ footer {
 #apdetails {
   background-color: #f9f9f9;
   padding: 20px;
+  /* font-weight: bold; */
   border-radius: 10px;
   margin-bottom: 30px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -650,6 +654,7 @@ footer {
   /* font-size: 24px; */
   margin-bottom: 20px;
   text-align: center;
+  font-weight: bold;
 }
 
 #apdetails label {
@@ -670,6 +675,7 @@ footer {
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
+  /* font-weight: bold; */
   margin-bottom: 50px;
   cursor: pointer;
 }
@@ -714,4 +720,8 @@ footer {
 .login_submit:hover {
   background-image: linear-gradient(to bottom right, #ffd700, #ffa500);
   background-color: #ffd700;
+}
+
+#submit{
+  font-weight: bold;
 }
